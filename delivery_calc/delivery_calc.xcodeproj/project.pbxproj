@@ -11,8 +11,8 @@
 		D7110CE4208F5B5900155170 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7110CE3208F5B5900155170 /* TopViewController.swift */; };
 		D7110CE9208F5B5A00155170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7110CE8208F5B5A00155170 /* Assets.xcassets */; };
 		D7110CEC208F5B5A00155170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7110CEA208F5B5A00155170 /* LaunchScreen.storyboard */; };
-		D7110CF7208F5B5A00155170 /* delivery_calcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7110CF6208F5B5A00155170 /* delivery_calcTests.swift */; };
 		D7110D02208F5D2F00155170 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7110D01208F5D2F00155170 /* main.swift */; };
+		D7110D08208F5FE100155170 /* TopViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7110D07208F5FE100155170 /* TopViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +33,9 @@
 		D7110CEB208F5B5A00155170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7110CED208F5B5A00155170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7110CF2208F5B5A00155170 /* delivery_calcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = delivery_calcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7110CF6208F5B5A00155170 /* delivery_calcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delivery_calcTests.swift; sourceTree = "<group>"; };
 		D7110CF8208F5B5A00155170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7110D01208F5D2F00155170 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D7110D07208F5FE100155170 /* TopViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,8 @@
 		D7110CF5208F5B5A00155170 /* delivery_calcTests */ = {
 			isa = PBXGroup;
 			children = (
-				D7110CF6208F5B5A00155170 /* delivery_calcTests.swift */,
-				D7110CF8208F5B5A00155170 /* Info.plist */,
+				D7110D09208F608D00155170 /* Application */,
+				D7110D06208F5FCA00155170 /* UI */,
 			);
 			path = delivery_calcTests;
 			sourceTree = "<group>";
@@ -110,6 +110,22 @@
 				D7110CE3208F5B5900155170 /* TopViewController.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		D7110D06208F5FCA00155170 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D7110D07208F5FE100155170 /* TopViewControllerTests.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D7110D09208F608D00155170 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D7110CF8208F5B5A00155170 /* Info.plist */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7110CF7208F5B5A00155170 /* delivery_calcTests.swift in Sources */,
+				D7110D08208F5FE100155170 /* TopViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +418,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = delivery_calcTests/Info.plist;
+				INFOPLIST_FILE = delivery_calcTests/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,7 +438,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = delivery_calcTests/Info.plist;
+				INFOPLIST_FILE = delivery_calcTests/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
