@@ -1,0 +1,6 @@
+*/Carthage
+*/xcuserdata
+*/*.xcodeproj/project.xcworkspace/xcuserdata
+*/*.xcodeproj/xcuserdata/
+delivery_calc/delivery_calc.xcodeproj/project.xcworkspace/xcuserdata/
+delivery_calc/delivery_calc.xcodeproj/xcuserdata/
