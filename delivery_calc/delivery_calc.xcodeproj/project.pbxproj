@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D7110CE2208F5B5900155170 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7110CE1208F5B5900155170 /* AppDelegate.swift */; };
-		D7110CE4208F5B5900155170 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7110CE3208F5B5900155170 /* ViewController.swift */; };
-		D7110CE7208F5B5900155170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7110CE5208F5B5900155170 /* Main.storyboard */; };
+		D7110CE4208F5B5900155170 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7110CE3208F5B5900155170 /* TopViewController.swift */; };
 		D7110CE9208F5B5A00155170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7110CE8208F5B5A00155170 /* Assets.xcassets */; };
 		D7110CEC208F5B5A00155170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7110CEA208F5B5A00155170 /* LaunchScreen.storyboard */; };
 		D7110CF7208F5B5A00155170 /* delivery_calcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7110CF6208F5B5A00155170 /* delivery_calcTests.swift */; };
+		D7110D02208F5D2F00155170 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7110D01208F5D2F00155170 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +28,14 @@
 /* Begin PBXFileReference section */
 		D7110CDE208F5B5900155170 /* delivery_calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = delivery_calc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7110CE1208F5B5900155170 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7110CE3208F5B5900155170 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D7110CE6208F5B5900155170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7110CE3208F5B5900155170 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		D7110CE8208F5B5A00155170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7110CEB208F5B5A00155170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7110CED208F5B5A00155170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7110CF2208F5B5A00155170 /* delivery_calcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = delivery_calcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7110CF6208F5B5A00155170 /* delivery_calcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delivery_calcTests.swift; sourceTree = "<group>"; };
 		D7110CF8208F5B5A00155170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7110D01208F5D2F00155170 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +77,8 @@
 		D7110CE0208F5B5900155170 /* delivery_calc */ = {
 			isa = PBXGroup;
 			children = (
-				D7110CE1208F5B5900155170 /* AppDelegate.swift */,
-				D7110CE3208F5B5900155170 /* ViewController.swift */,
-				D7110CE5208F5B5900155170 /* Main.storyboard */,
-				D7110CE8208F5B5A00155170 /* Assets.xcassets */,
-				D7110CEA208F5B5A00155170 /* LaunchScreen.storyboard */,
-				D7110CED208F5B5A00155170 /* Info.plist */,
+				D7110D03208F5D4000155170 /* Application */,
+				D7110D05208F5E0B00155170 /* UI */,
 			);
 			path = delivery_calc;
 			sourceTree = "<group>";
@@ -94,6 +90,26 @@
 				D7110CF8208F5B5A00155170 /* Info.plist */,
 			);
 			path = delivery_calcTests;
+			sourceTree = "<group>";
+		};
+		D7110D03208F5D4000155170 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D7110CE1208F5B5900155170 /* AppDelegate.swift */,
+				D7110CE8208F5B5A00155170 /* Assets.xcassets */,
+				D7110CED208F5B5A00155170 /* Info.plist */,
+				D7110CEA208F5B5A00155170 /* LaunchScreen.storyboard */,
+				D7110D01208F5D2F00155170 /* main.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D7110D05208F5E0B00155170 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D7110CE3208F5B5900155170 /* TopViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +195,6 @@
 			files = (
 				D7110CEC208F5B5A00155170 /* LaunchScreen.storyboard in Resources */,
 				D7110CE9208F5B5A00155170 /* Assets.xcassets in Resources */,
-				D7110CE7208F5B5900155170 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7110CE4208F5B5900155170 /* ViewController.swift in Sources */,
+				D7110CE4208F5B5900155170 /* TopViewController.swift in Sources */,
 				D7110CE2208F5B5900155170 /* AppDelegate.swift in Sources */,
+				D7110D02208F5D2F00155170 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +237,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D7110CE5208F5B5900155170 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7110CE6208F5B5900155170 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D7110CEA208F5B5A00155170 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -359,7 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = delivery_calc/Info.plist;
+				INFOPLIST_FILE = delivery_calc/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,7 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = delivery_calc/Info.plist;
+				INFOPLIST_FILE = delivery_calc/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
